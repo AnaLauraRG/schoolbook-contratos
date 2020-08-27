@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Capturar Biblioteca</title>
+</head>
+
+<body>
+  <!--fixed size -->
+  <div class="container">
+    <h4>Capturar biblioteca</h4>
+    <hr/>
+    <br />
+    <h5 class="text-secondary">Datos generales</h5>
+    <form action="">
+      <!--row 1-->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" class="form-control" id="nombre" 
+            placeholder="Nombre de la bilioteca">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="url">P&aacute;gina Web</label>
+          <input type="url" name="nombre" class="form-control" id="url" 
+            placeholder="http://...">
+        </div>
+      </div>
+      <!--row 2-->
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="numEjemplares">N&uacute;mero aproximado de ejemplares</label>
+          <input type="number" class="form-control w-auto" name="ejemplares" 
+            id="ejemplares" placeholder="###" >
+        </div>
+        <div class="form-group col-md-4">
+          <label for="numUsuarios">N&uacute;mero aproximado de usuarios</label>
+          <input type="number" class="form-control w-auto" name="usuarios" 
+            id="usuarios" placeholder="###" >
+        </div>
+      </div>
+      <!-- row 3-->
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="claveEscolar">Clave de la escuela</label>
+          <input type="text" name="claveEscuela" class="form-control-plaintext" 
+            id="claveEscolar" placeholder="Clave escolar" readonly>
+        </div>
+        <div class="form-group col-md-9">
+          <label for="nombreEscuela"> Nombre de la escuela</label>
+          <input type="text" class="form-control-plaintext" 
+            name="nombreEscuela" id="nombreEscuela" 
+            placeholder="Nombre de la escuela" readonly>
+        </div>
+      </div>
+      <br />
+      <h5 class="text-secondary">Ubicaci&oacute;n</h5>
+      <!--row 4-->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="direccion1">Direcci&oacute;n </label>
+          <input type="text" name="direccion1" id="direccion1" 
+            class="form-control" placeholder="Direcci&oacute;n l&iacute;nea 1">
+        </div>
+      </div>
+      <!--row 5-->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="direccion2">Direcci&oacute;n </label>
+          <input type="text" name="direccion2" id="direccion2" 
+            class="form-control" placeholder="Direcci&oacute;n l&iacute;nea 2">
+        </div>
+        <div class="col-md-3">
+          <label for="latitud">Latitud</label>  
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="latitud">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+            </div>
+            <input type="number" class="form-control w-auto"
+              name ="longitud" aria-label="##.######" placeholder="##.######" 
+              aria-describedby="longitud">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="longitud">Longitud</label>  
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="longitud">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+            </div>
+            <input type="number" class="form-control w-auto"
+              name ="longitud" aria-label="##.######" placeholder="##.######" 
+              aria-describedby="longitud">
+          </div>
+        </div>
+    </div>
+    <br />
+    <h5 class="text-secondary">Detalle de pagos</h5>
+    <!--row 6-->
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="cuota">Cuota mensual</label>
+        <input type="number" name="cuota" id="cuota" 
+          class="form-control w-auto" placeholder="$0,000.00">
+      </div>
+      <div class="col-md-5">
+        <label for="tarjeta">Asignar tarjeta de cr&eacute;dito</label>  
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="tarjeta"
+            placeholder="0000 0000 0000 0000" 
+            aria-label="0000 0000 0000 0000" 
+            aria-describedby="tarjeta">
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary" type="button">
+              Asignar
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- row 5-->
+      <div class="row justify-content-center">      
+        <input class="btn btn-primary mr-1" type="reset" value="Limpiar">  
+        <button type="submit" class="btn btn-primary ml-1">Siguiente</button>
+      </div>
+    </form>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+    crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+    crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/eabc277a40.js" 
+    crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
